@@ -1,22 +1,15 @@
-import { useState } from "react";
 import { MdOutlineStar } from "react-icons/md";
 
-function Star() {
-  const [active, setActive] = useState(false);
-
+function Star({ active, onClick }: { active: boolean[], onClick: React.MouseEventHandler }) {
   return (
     <>
-      <>
-        <MdOutlineStar
-          id="1"
-          className={`star ${active ? "active" : "inactive"}`}
-          onClick={() =>
-            active ? setActive(() => false) : setActive(() => true)
-          }
-        />
-      </>
+      <MdOutlineStar
+        id="1"
+        className={`star ${active ? "active" : "inactive"}`}
+        onClick={onClick}
+      />
     </>
   );
 }
 
-export {Star};
+export { Star };

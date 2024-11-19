@@ -3,7 +3,7 @@ import StarRating from "./components/StarRating";
 function App() {
   return (
     <>
-      <StarRating ammount={5} />
+      <StarRating ammount={7} />
     </>
   );
 }

@@ -16,13 +16,14 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10%;
+  justify-content: space-around;
   background: #e7e9fa;
+  overflow: hidden;
 }
 
 .star {
   width: 10%;
+  min-width: 40px;
   height: auto;
 }
 
