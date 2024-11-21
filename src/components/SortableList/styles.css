@@ -1,0 +1,51 @@
+.sortable-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;  
+  background-color: #EFF6FF;
+}
+
+.sortable-list-title {
+  font-size: 2.5em;
+  color: #0D2167;
+}
+
+.sortable-list-wrapper-inside {
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.sortable-list-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sortable-list-form select {
+  appearance: none;
+}
+
+.sortable-list-option, .sortable-list-option:hover, .sortable-list-option:active, .sortable-list-option:focus, .sortable-list-option:focus-visible, .sortable-list-option:focus-within {
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+}
+
+.sortable-list-active {
+  background-color: #F7F7FA;
+  color: #5A6793;
+}
+
+.sortable-list-option-selected {
+  background-color: #0D2167;
+  color: white;
+}
+
+.sortable-list-option:disabled {
+  background-color: #E5E7EB;
+  color: #9CA3AF;
+}
