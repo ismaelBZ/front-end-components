@@ -18,16 +18,17 @@
 }
 
 .sortable-list-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1em;
 }
 
-.sortable-list-form select {
-  appearance: none;
+.sortable-list-search-wrapper {
+  position: relative;
 }
 
-.sortable-list-option, .sortable-list-option:hover, .sortable-list-option:active, .sortable-list-option:focus, .sortable-list-option:focus-visible, .sortable-list-option:focus-within {
+.sortable-list-search {
+  width: calc(100% - 2em);
   padding: 1em;
   border: none;
   border-radius: 5px;
@@ -35,9 +36,39 @@
   outline: none;
 }
 
-.sortable-list-active {
+.sortable-list-search, .sortable-list-search::placeholder, .sortable-list-search-arrow {
+  font-size: 1em;
   background-color: #F7F7FA;
   color: #5A6793;
+}
+
+.sortable-list-search-arrow {
+  position: absolute;
+  right: 1em;
+  top: calc(50% - 8px);
+  z-index: 10;
+}
+
+.sortable-list-options {
+  list-style: none;
+  font-size: 0.875em; 
+  
+  
+  padding: 0.5em 0;
+  border: none;
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+  background-color: #F7F7FA;
+  color: #5A6793;
+}
+
+.sortable-list-options-item {
+  padding: 0.3em 1em;
+}
+
+.sortable-list-options-item:hover {
+  background-color: #E3E5F1
 }
 
 .sortable-list-option-selected {
